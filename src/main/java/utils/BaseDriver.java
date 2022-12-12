@@ -3,10 +3,12 @@ package utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
+
 public class BaseDriver extends LocalDriver{
 
     WebDriver driver;
-    String driverPath = "/home/ciruspunk/optionals/webdrivers/chromedriver";
+    String driverPath = "C:\\Optionals\\Webdriver\\chromedriver.exe";
     String url = "https://www.amazon.com/";
 
     public BaseDriver(WebDriver driver) {
@@ -19,6 +21,7 @@ public class BaseDriver extends LocalDriver{
         System.setProperty("webdriver.chrome.driver", driverPath);
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return driver;
     }
 

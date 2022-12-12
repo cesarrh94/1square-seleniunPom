@@ -11,7 +11,7 @@ public class SearchPage implements PageActions {
 
     // locators
     By firstResultContainer = By.xpath("//div[@data-cel-widget='search_result_1']");
-    By firstResultLink = By.xpath("//img[@src='https://m.media-amazon.com/images/I/61nhOdlKpDL._AC_UY218_.jpg']");
+    By firstResultLink = By.xpath("//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal']");
     By symbol = By.xpath("//span[@class='a-price-symbol']");
     By priceWhole = By.xpath("//span[@class='a-price-whole']");
     By priceFraction = By.xpath("//span[@class='a-price-fraction']");
@@ -26,7 +26,7 @@ public class SearchPage implements PageActions {
 
     @Override
     public void click(By locator) {
-        driver.findElement(locator);
+        driver.findElement(locator).click();
     }
 
     @Override
@@ -59,6 +59,5 @@ public class SearchPage implements PageActions {
         productPrice = getText(symbol) + getText(priceWhole) + "." + getText(priceFraction);
         System.out.println("product price from sp: " + productPrice);
         click(firstResultLink);
-        Thread.sleep(6000);
     }
 }

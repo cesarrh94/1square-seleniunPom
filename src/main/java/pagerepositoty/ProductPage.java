@@ -7,7 +7,6 @@ import utils.PageActions;
 public class ProductPage implements PageActions {
 
     WebDriver driver;
-
     String productPrice = null;
 
     public ProductPage(WebDriver driver) {
@@ -19,6 +18,8 @@ public class ProductPage implements PageActions {
     By priceWhole = By.xpath("//span[@class='a-price-whole']");
     By priceFraction = By.xpath("//span[@class='a-price-fraction']");
     By addToCartButton = By.id("add-to-cart-button");
+
+    By closeSideWindow = By.id("attach-close_sideSheet-link");
     By goToCartLink = By.id("nav-cart");
 
     public String getProductPrice() {
@@ -27,7 +28,7 @@ public class ProductPage implements PageActions {
 
     @Override
     public void click(By locator) {
-        driver.findElement(locator);
+        driver.findElement(locator).click();
     }
 
     @Override
@@ -44,15 +45,14 @@ public class ProductPage implements PageActions {
 
     }
 
-
     // custom methods
     public void addProductToCart() throws InterruptedException {
         productPrice = getText(symbol) + getText(priceWhole) + "." + getText(priceFraction);
         System.out.println("product price from pp: " + getProductPrice());
-        Thread.sleep(3000);
         click(addToCartButton);
+        Thread.sleep(6000);
+        click(closeSideWindow);
         click(goToCartLink);
-        Thread.sleep(3000);
     }
 
 }
