@@ -33,8 +33,21 @@ public class AmazonTest {
     }
 
     @Test
-    public void firstTest() throws InterruptedException {
-        homePage.typeProduct("Samsung Galaxy S22 Ultra");
+    public void searchGalaxyNote20() throws InterruptedException {
+        homePage.typeProduct("Samsung Galaxy Note 20");
+        searchPage.selectFirstResult();
+        Thread.sleep(3000);
+        productPage.addProductToCart();
+        Thread.sleep(3000);
+        Assert.assertEquals(productPage.getProductPrice(), searchPage.getProductPrice());
+        cartPage.deleteProduct();
+        Thread.sleep(3000);
+        Assert.assertEquals(productPage.getProductPrice(), cartPage.getProductPrice());
+    }
+
+    @Test
+    public void searchGalaxyS20FE5G() throws InterruptedException {
+        homePage.typeProduct("Samsung Galaxy S20 FE 5G");
         searchPage.selectFirstResult();
         Thread.sleep(3000);
         productPage.addProductToCart();
