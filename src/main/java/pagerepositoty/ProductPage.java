@@ -51,7 +51,7 @@ public class ProductPage implements PageActions {
         System.out.println("product price from pp: " + getProductPrice());
         click(addToCartButton);
         Thread.sleep(6000);
-        click(closeSideWindow);
+//        click(closeSideWindow);
         click(goToCartLink);
     }
 

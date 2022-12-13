@@ -1,0 +1,15 @@
+<suite name="automation test suite">
+    <test name="automation testing - release12/12">
+        <classes>
+            <class name="testcases.AmazonTest"/>
+            <!--just to run specific test methods or test cases.-->
+<!--            <methods>-->
+<!--                <include name="searchGalaxyNote20"/>-->
+<!--            </methods>-->
+            <!-- we can do the opposite and exclude test methods or test cases-->
+            <methods>
+                <exclude name="searchGalaxyS20FE5G"/>
+            </methods>
+        </classes>
+    </test>
+</suite>

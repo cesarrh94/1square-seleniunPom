@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c4273fd-29c4-4fd0-a2e9-794f69814258" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/testRunner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcases/AmazonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcases/AmazonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pagerepositoty/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pagerepositoty/ProductPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +40,15 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.AmazonTest.firstTest">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="testcases" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Projects/Java/Intellij/testRunner.xml">
     <configuration name="AmazonTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumDemo" />
       <extension name="coverage">
@@ -78,8 +84,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AmazonTest.searchGalaxyNote20" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.AmazonTest" />
+      <option name="METHOD_NAME" value="searchGalaxyNote20" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Projects/Java/Intellij/testRunner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumDemo" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testRunner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecondSearch.searchGalaxyS20FE5G" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.SecondSearch" />
+      <option name="METHOD_NAME" value="searchGalaxyS20FE5G" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Projects/Java/Intellij/testRunner.xml" />
+        <item itemvalue="TestNG.AmazonTest.searchGalaxyNote20" />
+        <item itemvalue="TestNG.SecondSearch.searchGalaxyS20FE5G" />
         <item itemvalue="TestNG.AmazonTest.firstTest" />
         <item itemvalue="TestNG.AmazonTest" />
       </list>
